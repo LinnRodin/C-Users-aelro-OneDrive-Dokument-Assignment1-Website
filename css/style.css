@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
+/* Base */
 :root {
 --color-theme:#20D3C2;
 --color-theme-light:#EDfCFA;
@@ -19,33 +20,285 @@
 --font-weight-regular: '400';
 --font-weight-medium: '500';
 --font-weight-bold: '700';
---font-size-14: 1,17rem ;
---font-size-16: 1,33rem ;
---font-size-18: 1,50rem;
+--font-size-14: 1.17rem ;
+--font-size-16: 1.33rem ;
+--font-size-18: 1.50rem;
 --font-size-24: 2rem;
 --font-size-36: 3rem;
 --font-size-60: 5rem;
 
---border-radius-small: 8px;
+--border-radius-small:8px;
 --border-radius-medium:25px;
 --border-radius-rounded:50%;
 }
 
-
-html { 
-    font-size:3rem ;
+/* general */
+html, body { 
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+/* main-menu button */
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius:var(--border-radius-medium);
+    font-weight: var(--font-weight-medium); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
 
-.article {
-    font-size: 2rem;
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
+/* SHOP NOW button */
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-theme-dark);
+    border-radius:var(--border-radius-medium);
+    font-weight: var(--font-weight-medium); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-white:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+            
+    }
+
+
+/* top-menu */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height:40px;
 }
 
-.title {
-    font-size: 3rem;
+    .top-menu > .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        /* top menu site-settings functions */
+            .top-menu .site-settings {
+                display: flex;
+            }
+        
+                .top-menu .site-settings .dropdown-theme {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                }
+        
+                    .top-menu .site-settings .dropdown-theme button {
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                        border: none;
+                        padding: 0;
+                    }
+        
+                        .top-menu .site-settings .dropdown-theme button:hover {
+                            color: var(--color-theme-dark);
+                        }
+                
+        
+            .top-menu .site-settings .dropdown-theme .dropdown-menu {
+                    background-color: var(--color-grey-0);
+                    color: var(--color-white);
+                    border: none;
+                    width: 180px;
+                    margin-top: 3rem;
+                }
+        
+                    .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                        background-color: var(--color-grey-0);
+                        color: var(--color-white);
+                        border: none;
+                        width: 100%;
+                        margin: 0;
+                    }
+        
+                        .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                            background-color: var(--color-dark);
+                            color: var(--color-white);
+                        }
+                
+    /* Top Menu social media and links */
+   
+    .top-menu .menu-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 0 1.2rem;
+    }       
+        .top-menu .menu-links a:hover {
+            color: var(--color-theme-dark);
+        }
+
+    .top-menu .menu-links .social-media {
+        margin-left: 1rem;
+        font-size: var(--font-size-14);
+    }
+
+        .top-menu .menu-links .social-media a {
+            margin: 0 0.3rem;
+        }
+            .top-menu .menu-links .social-media a:last-child {
+                margin: 0 0 0 0.3rem;
+            }
+
+/* main-menu */
+.main-menu {
+    background-color: var(--color-white);
+    color: var(--color-theme-dark)
 }
 
-.text {
-    font-size: 5rem;
-}
+    .main-menu .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Logotype */
+    .main-menu .brand {
+        flex:3;
+        margin-top: 2rem;
+    }
+    .main-menu .search {
+        flex: 4;
+    }
+    .main-menu .links {
+        flex: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
 
+        .main-menu .main-menu-links .main-menu-link {
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            margin: 0 0.5rem;
+        }
+            .main-menu .main-menu-links .main-menu-link:hover {
+                color: var(--color-product-instock)
+            }
+
+            .main-menu .main-menu-links .main-menu-link:first-child {
+                margin: 0 2.4rem 0 0;
+            }
+
+            .main-menu .main-menu-links .main-menu-link:last-child {
+                margin: 0 0 0 0.8rem;
+            }
+
+
+        .main-menu .main-menu-links .main-menu-link {
+            font-size: var(--font-size-16);
+        }
+
+.main-menu nav {
+    border-top: 1px solid var(--color-grey-2);
+    border-bottom: 1px solid var(--color-grey-2);
+    margin-top: 2rem;
+}
+    .main-menu > nav > .container {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-menu nav .browse-categories {
+       flex: 2;
+    }
+        /* Browse Categories button */
+        .main-menu nav .browse-categories button {
+            background-color: var(--color-theme);
+            border: none;
+            color: var(--color-white);
+            font-size: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.7rem 1rem;
+        }
+            .main-menu nav .browse-categories button:hover {
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+            }
+
+    /* Special offer button */
+    .main-menu nav .special-offer {
+        flex: 7;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+     }
+ 
+
+
+/* Showcase-section 3 of homepage */ 
+.showcase {
+    background-color: var(--color-grey-3);
+}           
+
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+        .showcase .showcase-content h1 {
+            font-family: var(--font-play) ;
+            font-size: var(--font-size-60);
+        }
+
+        .showcase .showcase-content h1 strong {
+            color: var(--color-theme)
+        }
+
+  /*webshop-info boxes*/
+  .webshop-info {
+    padding: 4rem 0;
+  }
+
+    .webshop-info .container {
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .webshop-info .info-box {
+        background-color: var(--color-theme-light);
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        flex: 1;
+        padding:1rem ;
+        border-radius: var(--border-radius-small);
+    }
+
+        .webshop-info .info-box:hover {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+
+    .webshop-info .info-box img {
+        margin-right: 1.5rem;
+    }
+
+        .webshop-info .info-box:hover img {
+            filter: brightness(1000%);
+        }
+
+    .webshop-info .info-box h1 {
+        color: var(--color-theme);
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+    }
+        .webshop-info .info-box:hover h1 {
+            color: var(--color-white);
+        }      
 
