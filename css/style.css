@@ -331,6 +331,7 @@ html, body {
         gap: 0.8rem;
         grid-template-columns: repeat(5, minmax(100px, 249px));
         grid-template-rows: repeat(3, minmax(100px, 249px));
+        justify-content: center;
     }
 
     .shop-by-category .category-box {
@@ -349,6 +350,7 @@ html, body {
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium)
         }
+
 /* category-boxes 1-7 */
 
     #category-box-1 {
