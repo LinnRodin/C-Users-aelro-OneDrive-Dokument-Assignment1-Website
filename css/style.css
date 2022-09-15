@@ -74,6 +74,15 @@ html, body {
         background-color: var(--color-theme);
     }
 
+    /*new-arrivals card-menu*/
+    .instock {
+        color: var(--color-product-instock);
+    }
+
+    .outofstock {
+        color: var(--color-product-outofstock);
+    }
+    
     /* section-title - shop by category*/
     .section-title {
         padding: 3rem 0;
@@ -265,6 +274,7 @@ html, body {
             justify-content: space-between;
             align-items: center;
             padding: 0.7rem 1rem;
+            transition: 0.15s ease-in-out;
         }
             .main-menu nav .browse-categories button:hover {
                 background-color: var(--color-theme-dark);
@@ -281,7 +291,7 @@ html, body {
  
 
 
-/* Showcase-section 3 of homepage */ 
+/* Showcase-part 3 of homepage */ 
 .showcase {
     background-color: var(--color-grey-3);
 }           
@@ -320,6 +330,7 @@ html, body {
         flex: 1;
         padding: 1rem ;
         border-radius: var(--border-radius-small);
+        transition: all 0.3s ease-in-out;
     }
 
         .webshop-info .info-box:hover {
@@ -329,6 +340,8 @@ html, body {
 
     .webshop-info .info-box img {
         margin-right: 1.5rem;
+        filter: brightness(100%);
+        transition: all 0.3s ease-in-out;
     }
 
         .webshop-info .info-box:hover img {
@@ -339,6 +352,7 @@ html, body {
         color: var(--color-theme);
         font-size: 1rem;
         font-weight: var(--font-weight-medium);
+        transition: all 0.3s ease-in-out;
     }
         .webshop-info .info-box:hover h1 {
             color: var(--color-white);
@@ -374,6 +388,7 @@ html, body {
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
             height: 38px;
+            transition: 0.2s ease-in-out;
         }
 
         .shop-by-category .category-box:hover .category-box-title {
@@ -422,4 +437,117 @@ html, body {
     #category-box-7 {
         grid-column: 5/ -1;
         grid-row: 3/ -1;
-    }        
+    }       
+
+/*new-arrivals-part 4 of homepage*/
+.new-arrivals {
+    margin-top: 7rem;
+}
+
+.new-arrivals .card {
+    height: 400px;
+    width: 350px;
+    overflow: hidden;
+}
+.new-arrivals .card img {
+    height: 400px;
+}
+
+
+.new-arrivals .card .card-coat {
+    position: absolute;
+    bottom: 0;
+    height: 14%;
+    color: var(--color-white);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+        .new-arrivals .card:hover .card-coat {
+            height:40%;
+
+        }
+
+    .new-arrivals .card .card-coat h1 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+
+        .new-arrivals .card:hover .card-coat h1 {
+            margin-bottom: 0;
+        }
+
+    .new-arrivals .card .card-coat button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            padding-left: 0.9rem;
+            padding-right: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+    .new-arrivals .card .card-coat .card-old-price {
+            text-decoration: line-through;
+        } 
+    
+    .new-arrivals .card .card-coat .card-discount-price {
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            font-size: 1.5em;
+    } 
+
+        .new-arrivals .card .card-background {
+            position: absolute;
+            bottom: 0;
+            height: 25.5%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .new-arrivals .card:hover .card-background {
+            height: 100%;
+            
+
+        }
+
+.new-arrivals .card .card-menu {
+    position: absolute;
+    z-index: 1;
+    top: 121%;
+    right: 10%;
+    list-style: none;
+    margin: auto;
+    padding: 0.8rem;
+    font-size: 1.25rem;
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-white);
+    transition: top 0.3s ease-in-out;   
+}
+
+        .new-arrivals .card:hover .card-menu {
+            top: 20px;
+
+        }
+
+            .new-arrivals .card .card-menu li {
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                font-size: 1.0em; 
+            }
+
+                .new-arrivals .card .card-menu li a {
+                    color: var(--color-grey-0);
+
+                }
+
+                    .new-arrivals .card .card-menu li a:hover {
+                        color: var(--color-theme);
+
+                    }
+
+
