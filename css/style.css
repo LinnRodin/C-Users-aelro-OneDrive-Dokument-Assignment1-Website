@@ -806,44 +806,43 @@ html, body {
 .top-sellers .grid {
     display: grid;
     gap: 0.7rem;
-    grid-template-columns: repeat (2, 550px); /*---vertical size--*/
-    grid-template-rows: repeat (2, 345px);  /*---horisontal size----*/
-    justify-content: center;
-    
+    grid-template-columns: 1fr, 1fr;
 }
+   /*  grid-template-columns: repeat (2, 550px); /*---vertical size--*/
+   /* grid-template-rows: repeat (2, 345px);  /*---horisontal size----*/ 
+   /* justify-content: center;
 
-.top-sellers .category-box {
+
+/*.top-sellers .category-box {
     position: relative;
     background-color: var(--color-grey-1);
     border-radius: var(--border-radius-small);
     height: 100%;
     width: 100%;
-    overflow: hidden;
-}
+    overflow: hidden;}
+*/
 
 /*---------------------------------------Grid-part-2-boxes--------------------------------------------*/
 
-
-
 #top-sellers-box-1 {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 2;
     grid-row-start: 1; 
-    grid-row-end: 2;
-}        
+    grid-row-end: 3;
+}
 
 #top-sellers-box-2 {
     grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 1; 
-    grid-row-end: 1;
+    grid-row-end: 2;
 }        
 
 #top-sellers-box-3 {
     grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2; 
-    grid-row-end: 2;
+    grid-row-end: 3;
 }        
 
 /*------------------------------------Cards-top-sellers------------------------------------- */
