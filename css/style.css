@@ -851,20 +851,20 @@ html, body {
     margin-top: 7rem;
 }
 
-.top-sellers-box-1 .card {
+#top-sellers-box-1 .card {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
 
-.top-sellers-box-2 .card { 
+#top-sellers-box-2 .card { 
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.top-sellers-box-3 .card  {
+#top-sellers-box-3 .card  {
     height: 100%;
     width: 100%;
     overflow: hidden;
