@@ -858,6 +858,7 @@ html, body {
 }
 
 
+
 #top-sellers-box-2 .card { 
     height: 100%;
     width: 100%;
@@ -926,13 +927,24 @@ html, body {
         .top-sellers .card .card-background {
             position: absolute;
             bottom: 0;
-            height: 13%;
+            height: 14%;
             width: 100%;
             background-color: var(--color-theme-dark);
             opacity: 0.90;
             transition: height 0.3s ease-in-out;
             
         }
+
+        .top-sellers .card .card-background-box-1 {
+            position: absolute;
+            bottom: 0;
+            height: 7%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        }
+
 
         .top-sellers .card:hover .card-background {
             height: 100%;
