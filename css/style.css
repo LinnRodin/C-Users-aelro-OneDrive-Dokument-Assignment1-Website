@@ -40,7 +40,7 @@ html, body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
 }
-/*-----------------------------------main-menu button----------------------------------- */
+/*-----------------------------------main-menu-button----------------------------------- */
 .btn-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -55,7 +55,7 @@ html, body {
         color: var(--color-white);
     }
 
-/*-----------------------------------Showcase - SHOP NOW button------------------------- */
+/*-----------------------------------General-SHOP-NOW-button------------------------- */
 .btn-white {
     background-color: var(--color-white);
     color: var(--color-theme);
@@ -74,7 +74,7 @@ html, body {
         background-color: var(--color-theme);
     }
 
-    /*-----------------------------new-arrivals card-menu-------------------------------*/
+    /*-----------------------------new-arrivals-card-menu-------------------------------*/
     .instock {
         color: var(--color-product-instock);
     }
@@ -83,7 +83,7 @@ html, body {
         color: var(--color-product-outofstock);
     }
     
-    /*----------------------------section-title - shop by category-----------------------*/
+    /*----------------------------section-title-shop-by-category-----------------------*/
     .section-title {
         padding: 3rem 0;
         color: var(--color-theme-dark);
@@ -789,6 +789,11 @@ html, body {
             padding-top: 120px;
             
         }
+
+            .sale-50 .container .learn-more .btn-white:hover {
+                background-color: var(--color-theme);
+                     
+            }
         
 /*--------------------------box-theme-----------------------*/
 
@@ -856,7 +861,6 @@ html, body {
     width: 100%;
     overflow: hidden;
 }
-
 
 
 #top-sellers-box-2 .card { 
@@ -949,8 +953,12 @@ html, body {
         .top-sellers .card:hover .card-background {
             height: 100%;
             
-
         }
+
+        .top-sellers .card:hover .card-background-box-1 {
+            height: 100%;
+        }   
+        
 
 .top-sellers .card .card-menu {
     position: absolute;
@@ -991,6 +999,75 @@ html, body {
 
 
 /*-----------------------------------Subscribe-now-------------------------------------------- */
+
+.subscribe {
+    background-color: var(--color-grey-4);
+}           
+
+    .subscribe .container {
+        width: 100%;
+        height: 313px;
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        align-items: center; 
+               
+    } 
+
+    .subscribe .container .subscribe-content {
+        padding-bottom: 120px;
+        
+    }
+        .subscribe .subscribe-content h1 strong {
+            font-family: var(--font-play);
+            font-size: var(--font-size-36);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme-dark);
+        }
+
+        .subscribe .subscribe-content h1 {
+            color: var(--color-theme);
+        
+        }
+
+        .subscribe .subscribe-content h1 span {
+            font-family: var(--font-play);
+            font-size: var(--font-size-36);
+            font-weight: var(--font-weight-bold)
+          
+        }
+
+        .subscribe .subscribe-content p {
+            color: var(--color-dark);
+          
+        }
+
+        .subscribe .container .subscribe-button {
+           margin-top: 130px;
+           margin-right: 400px;
+        }
+
+        .subscribe .container .subscribe-button .btn-white {
+            background: var(--color-theme);
+            color: var(--color-white);
+          
+        }
+
+        .subscribe .container .subscribe-button .btn-white:hover {
+            background-color: var(--color-theme-dark);
+                 
+        }
+    
+        
+
+    /*----------------------------placeholder-img----------------------*/
+
+    .subscribe .container .placeholder-img {
+        width: 540px; 
+        height: 100%;
+        background-color: var(--color-grey-2);
+    }
+   
 
 
 
