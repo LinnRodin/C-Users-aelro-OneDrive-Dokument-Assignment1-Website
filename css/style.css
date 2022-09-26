@@ -196,15 +196,16 @@ html, body {
         justify-content: space-between;
         align-items: center;
     }
-    /*---------------------------------------Logotype------------------------------------*/
-    .main-menu .brand {
+    /*---------------------------------*/
+
+    .main-menu .brand { /* logotype */
         flex:3;
-        margin-top: 2rem;
+        margin-top: 2rem; 
     }
-    .main-menu .search {
+    .main-menu .search { /* search */
         flex: 4;
     }
-    .main-menu .links {
+    .main-menu .links { /* links */
         flex: 3;
         display: flex;
         justify-content: end;
@@ -744,7 +745,7 @@ html, body {
 
 
 
-/*----------------------------------Flash-sale------------------------------------------ */
+/*-------------------------------------Flash-sale-------------------------------------- */
 
 .sale-50 {
     background-color: var(--color-theme-dark);
@@ -768,7 +769,8 @@ html, body {
         }
 
         .sale-50 .sale-content h1 {
-            color: var(--color-white)
+            color: var(--color-white);
+            padding-top: 3rem;
         
         }
 
@@ -784,24 +786,68 @@ html, body {
             font-size: var(--font-size-16);
         }
 
-        .sale-50 .container .learn-more {
-            margin-left: 40rem;
-            padding-top: 120px;
+        .sale-50 .container .button {
+            align-items: center;
+            margin-top: 2rem;
+            padding-left: 16rem;
             
         }
-
-            .sale-50 .container .learn-more .btn-white:hover {
+            .sale-50 .container .button .btn-white:hover {
                 background-color: var(--color-theme);
                      
             }
         
+/*------------------------------Circles---------------------- */
+
+.countdown  {
+    height: 435px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.circles  {
+    display: flex;
+    margin-top: 5rem; 
+    padding-left: 16rem;
+
+}
+
+.circle  {
+    background: var(--color-white);
+    border-radius: 50%;
+    height: 109px;
+    width: 109px;
+    line-height: 5px;
+    margin: 0 20px;
+    outline: 2px dotted var(--color-theme);
+    padding: 1.35rem;
+}
+
+    .circle h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-theme);
+        font-size: 2rem; 
+        text-align: center;
+    }
+
+    .circle p {
+        color: #080C24;
+    }
+
+
+
 /*--------------------------box-theme-----------------------*/
 
     .sale-50 .container .sale-content {
         width: 255px;
-        height: 209px;
+        height: 265px;
         background-color: var(--color-theme);
-        margin-bottom: 13rem;
+        margin-bottom: 9.5rem;
     }
 
 
@@ -1027,7 +1073,7 @@ html, body {
 
         .subscribe .subscribe-content h1 {
             color: var(--color-theme);
-        
+           
         }
 
         .subscribe .subscribe-content h1 span {
@@ -1039,36 +1085,60 @@ html, body {
 
         .subscribe .subscribe-content p {
             color: var(--color-dark);
-          
+            
         }
 
-        .subscribe .container .subscribe-button {
-           margin-top: 130px;
-           margin-right: 400px;
-        }
 
-        .subscribe .container .subscribe-button .btn-white {
+        .subscribe .container .input-group-custom button { 
             background: var(--color-theme);
             color: var(--color-white);
+            border-radius:var(--border-radius-medium);
           
-        }
-
-        .subscribe .container .subscribe-button .btn-white:hover {
-            background-color: var(--color-theme-dark);
-                 
-        }
-    
+        }   
         
+        .subscribe .container .input-group-custom button:hover {
+            background-color: var(--color-theme-dark);
+        
+        }  
+        
+        .test .input-group-custom {
+            position: relative;
 
-    /*----------------------------placeholder-img----------------------*/
+        }
+
+        .test .input-group-custom input  {
+              height: 46px;
+              width: 445px ;
+              padding-right: 100px;
+              
+             
+            }
+           .test .input-group-custom button {
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                    height: 38px;
+                }
+
+    /*-----placeholder-img--------------*/
 
     .subscribe .container .placeholder-img {
         width: 540px; 
         height: 100%;
         background-color: var(--color-grey-2);
     }
-   
+    /*-------copyright---------------*/
+    .subscribe .copyright {
+        width: 1920px; 
+        height: 80px;
+        background-color: var(--color-dark);
+    }
 
+    .subscribe .copyright {
+        color: var(--color-white);
+        padding-top: 22px;
+        padding-left: 110px;
+    }
 
 
 
