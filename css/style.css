@@ -932,6 +932,10 @@ html, body {
     padding-left: 1rem;
 }
 
+    .card.big .card-general {
+        bottom: -55px;
+    }
+
         .top-sellers .card:hover .card-general {
             height:40%;
 
@@ -985,6 +989,7 @@ html, body {
             
         }
 
+          
         .top-sellers .card .card-background-box-1 {
             position: absolute;
             bottom: 0;
@@ -1101,32 +1106,43 @@ html, body {
         
         }  
         
-        .test .input-group-custom {
+        .input-group-custom {
             position: relative;
+            width: 445px;
 
         }
 
-        .test .input-group-custom input  {
+            .input-group-custom input  {
               height: 46px;
-              width: 445px ;
+              width: 100% ;
               padding-right: 100px;
               
              
             }
-           .test .input-group-custom button {
+                 .input-group-custom button {
                     position: absolute;
                     right: 3px;
                     top: 3px;
                     height: 38px;
                 }
 
+                .subscribe .container .search {
+                    flex: 3rem;
+                    padding: 3rem;
+                    padding-left: 0;
+                }
+
+
+
     /*-----placeholder-img--------------*/
 
     .subscribe .container .placeholder-img {
-        width: 540px; 
+        flex: 2rem;
+        width: 100%; 
         height: 100%;
         background-color: var(--color-grey-2);
     }
+
     /*-------copyright---------------*/
     .subscribe .copyright {
         width: 1920px; 
