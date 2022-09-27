@@ -205,6 +205,51 @@ html, body {
     .main-menu .search { /* search */
         flex: 4;
     }
+
+    .main-menu .search #searchbox {
+        border-radius: var(--border-radius-medium);
+        height: 45px;
+        width: 521px;
+        margin: auto;
+        position: relative;
+        margin-left: 8rem;
+        margin-top: 2rem;
+
+    }
+/* ------------------------------------Searchbox---------------------------------- */
+
+    .main-menu .search #searchbox input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid var(--color-grey-3);
+        font-size: 0.9rem;
+        padding-left: 1.5rem;
+        
+    }
+
+    .main-menu .search #searchbox button {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: 50px;
+        height: 100%;
+        background-color: #20D3C2;
+        color: var(--color-white);
+        border: none;
+        border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+        transition: 0.3s ease-in-out;
+    }
+
+        .main-menu .search #searchbox button:hover {
+            background-color: var(--color-theme-dark);
+            
+        }
+        
+/* --------------------------------- */
+
     .main-menu .links { /* links */
         flex: 3;
         display: flex;
@@ -264,6 +309,7 @@ html, body {
     .main-menu nav .browse-categories {
        flex: 2;
     }
+
 /* -------------------------Browse-categories-button---------------------------------- */
         .main-menu nav .browse-categories button {
             background-color: var(--color-theme);
@@ -576,6 +622,7 @@ html, body {
         text-align: center;
               
     } 
+
 
         .sale-30 .sale-content h1 strong {
             font-family: var(--font-play);
