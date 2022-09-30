@@ -13,6 +13,7 @@
 --color-grey-2:#E3E3E3;
 --color-grey-3:#EEEEEE;
 --color-grey-4:#F6F6F6;
+--color-grey-5:#777777;
 --color-product-instock:#82D8C6 ; 
 --color-product-outofstock:#FE6C6C ; 
 
@@ -56,7 +57,7 @@ html, body {
         color: var(--color-white);
     }
 
-/*-----------------------------------General-SHOP-NOW-button------------------------- */
+/*-----------------------------------General-button--------------------------------- */
 .btn-white {
     background-color: var(--color-white);
     color: var(--color-theme);
@@ -75,7 +76,7 @@ html, body {
         background-color: var(--color-theme);
     }
 
-    /*-----------------------------New-arrivals-card-menu-------------------------------*/
+    /*-----------------------------------Card-menu-colors-----------------------------------*/
     .instock {
         color: var(--color-product-instock);
     }
@@ -84,7 +85,13 @@ html, body {
         color: var(--color-product-outofstock);
     }
     
-    /*----------------------------Section-title-shop-by-category-----------------------*/
+    /*-----------------------------------Section-title--------------------------------*/
+    
+    .required {
+        color: var( --color-theme);
+    }
+    
+    
     .section-title {
         padding: 3rem 0;
         color: var(--color-theme-dark);
@@ -120,7 +127,8 @@ html, body {
         justify-content: space-between;
         align-items: center;
     }
-/* ---------------------------------Top-menu-site-settings-----------------------------*/
+/* ---------Top-menu-site-settings-----------------*/
+
             .top-menu .site-settings {
                 display: flex;
             }
@@ -250,7 +258,7 @@ html, body {
             
         }
 
-/* ------------------------------Main-menu-links------------------------------------ */
+/* ----------------------------------Main-menu-links------------------------------------ */
 
     .main-menu .links { 
         flex: 3;
@@ -312,7 +320,8 @@ html, body {
        flex: 2;
     }
 
-/* -------------------------Browse-categories-button---------------------------------- */
+/* ------Browse-categories-button--------------- */
+    
         .main-menu nav .browse-categories button {
             background-color: var(--color-theme);
             border: none;
@@ -534,25 +543,25 @@ html, body {
         }
 
     .new-arrivals .card .card-general button {
-            background-color: transparent;
-            color: var(--color-white);
-            border: 1px solid var(--color-white);
-            font-size: 0.875rem;
-            padding-left: 0.9rem;
-            padding-right: 0.9rem;
-            margin: 0.5rem 0;
-        }
+        background-color: transparent;
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        font-size: 0.875rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        margin: 0.5rem 0;
+    }
 
     .new-arrivals .card .card-general .card-old-price {
-            text-decoration: line-through;
-            margin: 0;
+        text-decoration: line-through;
+        margin: 0;
            
-        } 
+    } 
     
     .new-arrivals .card .card-general .card-discount-price {
-            color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
-            font-size: 1.5em;
+        color: var(--color-theme);
+        font-weight: var(--font-weight-medium);
+        font-size: 1.5em;
           
     } 
 
@@ -607,7 +616,7 @@ html, body {
                         color: var(--color-theme);
 
                     }
-/*------------------------------------My-Account--------------------------------------- */
+/*-------------------------------------My-Account--------------------------------------- */
 .site-title {
     background-color: var(--color-theme-light-dark);
     color: #FFFFFF;
@@ -656,6 +665,72 @@ html, body {
                 color: var(--color-theme-light);
                 text-decoration: underline;
             }
+
+            
+/*-------------------------------------signup-grid-------------------------------------*/
+
+.signup-signin {
+    margin: 6rem 0;
+}
+
+.signup-signin .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    align-items: start;
+}
+
+
+.form-theme .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-grey-4);
+}   
+
+
+        .form-theme .card .card-body h1 {
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-theme-dark);
+            font-size: 1.5rem;
+        }
+
+        .form-theme .card .card-body .card-text {
+            margin: 1.5rem 0;
+            line-height: 2;
+        }
+
+        .form-theme .card .card-body .card-text a {
+            color: var (--color-theme);
+            font-weight: var (--font-weight-medium);
+            text-decoration: none;
+        }
+            .form-theme .card .card-body .card-text a:hover {
+                color: var (--color-theme-dark);
+                text-decoration: underline;
+            }
+
+
+        .form-theme .card .card-body .card-text.text-small {
+            color: var(--color-grey-5);
+            font-size: 0.875rem;
+        }
+
+
+.form-theme form input {
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius-small);
+    border: none;
+    padding: 0.5rem 0.9rem;
+    margin: 0.3rem 0;
+}
+    .form-theme form input:focus {
+        outline: 0;
+        box-shadow: 0 0 2px 0 var(--color-theme-dark);
+
+    }
 
 
 /*--------------------------------------30% OFF SALE------------------------------------ */
