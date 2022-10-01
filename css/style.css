@@ -2,20 +2,20 @@
 
 /*----------------------------------------Base----------------------------------------- */
 :root {
---color-theme:#20D3C2;
---color-theme-light:#EDfCFA;
---color-theme-dark:#0e153D;
---color-theme-light-dark:#50546E;
---color-dark:#080C24;
---color-white:#FFFFFF;
---color-grey-0:#AAAAAA;
---color-grey-1:#CCCCCC;
---color-grey-2:#E3E3E3;
---color-grey-3:#EEEEEE;
---color-grey-4:#F6F6F6;
---color-grey-5:#777777;
---color-product-instock:#82D8C6 ; 
---color-product-outofstock:#FE6C6C ; 
+--color-theme: #20D3C2;
+--color-theme-light: #EDfCFA;
+--color-theme-dark: #0e153D;
+--color-theme-light-dark: #50546E;
+--color-dark: #080C24;
+--color-white: #FFFFFF;
+--color-grey-0: #AAAAAA;
+--color-grey-1: #CCCCCC;
+--color-grey-2: #E3E3E3;
+--color-grey-3: #EEEEEE;
+--color-grey-4: #F6F6F6;
+--color-grey-5: #777777;
+--color-product-instock: #82D8C6 ; 
+--color-product-outofstock: #FE6C6C ; 
 
 --font-play: Play, sans-serif;
 --font-roboto: Roboto, sans-serif;
@@ -85,7 +85,12 @@ html, body {
         color: var(--color-product-outofstock);
     }
     
-    /*-----------------------------------Section-title--------------------------------*/
+    /*--color-text-theme(stars)card-general--*/
+    .text-theme {
+        color: var(--color-theme);
+    }
+
+    /*-----------------------------------Section-title-------------------------------------*/
     
     .required {
         color: var( --color-theme);
@@ -516,6 +521,7 @@ html, body {
     position: absolute;
     bottom: 0;
     height: 14%;
+    width: 90%;
     color: var(--color-white);
     z-index: 1;
     transition: 0.3s ease-in-out;
@@ -562,6 +568,7 @@ html, body {
         color: var(--color-theme);
         font-weight: var(--font-weight-medium);
         font-size: 1.5em;
+        margin:0;
           
     } 
 
@@ -690,29 +697,30 @@ html, body {
     text-decoration: underline;
   }
 
-/*------------------------------------- External logins -------------------------------------*/
+/*-------------------------------------External-logins--------------------------------------*/
 .external-logins {
     position: relative;
     display: flex;
     justify-content: center;
+    z-index: 0;
   }
   
     .external-logins .label {
-    position: absolute;
-    background-color: var(--color-gray-4);
-    padding: 0 1rem;
-    z-index: 1;
-    font-weight: var(--font-weight-medium);
+        position: absolute;
+        background-color: var(--color-gray-4);
+        padding: 0 1rem;
+        z-index: 2;
+        font-weight: var(--font-weight-regular);
     }
 
     .external-logins .line {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    border: 1px solid var(--color-gray-0);
-    z-index: 0;
-    opacity: 0.5;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        border: 1px solid var(--color-gray-0);
+        z-index: -1;
+        opacity: 0.5;
     }
 
 .external-socialmedia-buttons {
@@ -729,33 +737,33 @@ html, body {
     }
 
     .external-socialmedia-buttons .facebook-button button {
-    background-image: url(/images/Buttons/Facebook\ login.svg);
-    background-repeat: no-repeat;
-    border: none;
-    height: 2.6rem;
-    width: 14.6rem;
+        background-image: url(/images/Buttons/Facebook\ login.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 2.6rem;
+        width: 14.6rem;
     }
         .external-socialmedia-buttons .facebook-button button:hover {
         filter: brightness(90%);
         }
 
 .external-socialmedia-buttons .google-button {
-text-align: right;
+    text-align: right;
 }
 
     .external-socialmedia-buttons .google-button button {
-    background-image: url(/images/placeholders/Google-login.png);
-    background-repeat: no-repeat;
-    border: none;
-    height: 2.6rem;
-    width: 14.6rem;
+        background-image: url(/images/Buttons/Google\ login.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 2.6rem;
+        width: 14.6rem;
     }
 
         .external-socialmedia-buttons .google-button button:hover {
         filter: brightness(90%);
         }
 
-/*------------------------------------- Form theme cards-------------------------------------*/
+/*--------------------------------------Form-theme-cards-------------------------------------*/
 .form-theme .card {
     padding: 1.5rem;
     border: none;
@@ -776,7 +784,7 @@ text-align: right;
 
         .form-theme .card .card-body .card-text a {
             color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
+            font-weight: var(--font-weight-regular);
             text-decoration: none;
         }
             .form-theme .card .card-body .card-text a:hover {
@@ -814,7 +822,7 @@ text-align: right;
                 box-shadow: 0 0 3px 0 var(--color-gray-0);
             }
 
-/*--------------------------------------30% OFF SALE------------------------------------ */
+/*--------------------------------------30%-OFF-SALE------------------------------------ */
 
 .sale-30 {
     background-color: var(--color-grey-1);
@@ -886,6 +894,7 @@ text-align: right;
     position: absolute;
     bottom: 0;
     height: 14%;
+    width: 90%;
     color: var(--color-white);
     z-index: 1;
     transition: 0.3s ease-in-out;
@@ -932,6 +941,7 @@ text-align: right;
         color: var(--color-theme);
         font-weight: var(--font-weight-medium);
         font-size: 1.5em;
+        margin: 0;
           
     } 
 
@@ -1156,6 +1166,7 @@ text-align: right;
     position: absolute;
     bottom: 0;
     height: 14%;
+    width: 90%;
     color: var(--color-white);
     z-index: 1;
     transition: 0.3s ease-in-out;
@@ -1206,6 +1217,7 @@ text-align: right;
         color: var(--color-theme);
         font-weight: var(--font-weight-medium);
         font-size: 1.5em;
+        margin: 0;
           
     } 
 
