@@ -667,7 +667,7 @@ html, body {
             }
 
             
-/*-------------------------------------signup-grid-------------------------------------*/
+/*-------------------------------------signup-signin-grid-------------------------------------*/
 
 .signup-signin {
     margin: 6rem 0;
@@ -717,18 +717,31 @@ html, body {
             font-size: 0.875rem;
         }
 
+        .form-theme form input [type=checkbox] {
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
 
-.form-theme form input {
-    display: block;
-    width: 100%;
-    border-radius: var(--border-radius-small);
-    border: none;
-    padding: 0.5rem 0.9rem;
-    margin: 0.3rem 0;
-}
+        .form-theme form input [type=checkbox] + label {
+            content: "";
+            margin-right: 0.5rem;
+        }
+
+    .form-theme form input [type=text],
+    .form-theme form input [type=email],       
+    .form-theme form input [type=password] {
+        display: block;
+        width: 100%;
+        border-radius: var(--border-radius-small);
+        border: none;
+        padding: 0.5rem 0.9rem;
+        margin: 0.2rem 0;
+    }
+
     .form-theme form input:focus {
         outline: 0;
-        box-shadow: 0 0 2px 0 var(--color-theme-dark);
+        box-shadow: 0 0 3px 0 var(--color-theme-dark);
 
     }
 
@@ -771,7 +784,6 @@ html, body {
            
         }
 
-        
         
     /*----------------------------box-theme-----------------------*/
 
