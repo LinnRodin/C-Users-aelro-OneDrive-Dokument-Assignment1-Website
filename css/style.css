@@ -723,21 +723,17 @@ html, body {
             display: inline-block;
         }
 
-        .form-theme form input [type=checkbox] + label {
-            content: "";
-            margin-right: 0.5rem;
+       
+        .form-theme form input [type=text],
+        .form-theme form input [type=email],       
+        .form-theme form input [type=password] {
+            display: block;
+            width: 100%;
+            border-radius: var(--border-radius-small);
+            border: none;
+            padding: 0.5rem 0.9rem;
+            margin: 0.2rem 0;
         }
-
-    .form-theme form input [type=text],
-    .form-theme form input [type=email],       
-    .form-theme form input [type=password] {
-        display: block;
-        width: 100%;
-        border-radius: var(--border-radius-small);
-        border: none;
-        padding: 0.5rem 0.9rem;
-        margin: 0.2rem 0;
-    }
 
     .form-theme form input:focus {
         outline: 0;
